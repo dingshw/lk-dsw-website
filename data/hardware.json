@@ -1,0 +1,112 @@
+{
+  "banner": {
+    "mimg": "https://storage.jd.com/jdlk-website/hardware/hardwarebg-m.png",
+    "img": "https://storage.jd.com/jdlk-website/hardware/hardwarebg.png",
+    "title": "智能硬件",
+    "info":"开启楼宇广告屏2.0时代"
+  },
+  "device": {
+    "title": "智能硬件",
+    "titleIcon": "https://storage.jd.com/jdlk-website/hardware/hardwareDevice.png",
+    "aiTerminal": {
+      "img": "https://storage.jd.com/jdlk-website/hardware/terminalbg.png",
+      "title": "智能线下广告终端",
+      "info":"智能线下广告设备，基于活体识别、活体跟踪、人脸识别、传感器等技术，全方位收集线下数据，针对当前人群匹配个性化广告内容，真正实现线下广告投放效果的实时监测和精准触达。",
+      "cardInfoList": [
+        {
+          "title": "行业领先的AI能力",
+          "desc": "100ms内的活体识别与人脸防伪检测",
+          "icon": "https://storage.jd.com/jdlk-website/hardware/ai-icon.png"
+        },
+        {
+          "title": "多机型适应多场景",
+          "desc": "适应商超、写字楼、小区等多种场景",
+          "icon": "https://storage.jd.com/jdlk-website/hardware/scene-icon.png"
+        },
+        {
+          "title": "改造成本低",
+          "desc": "提供自研设备、科技赋能等多种合作方式",
+          "icon": "https://storage.jd.com/jdlk-website/hardware/setting-icon.png"
+        },
+        {
+          "title": "多种互动广告形式",
+          "desc": "游戏、秒杀、抽奖",
+          "icon": "https://storage.jd.com/jdlk-website/hardware/interact-icon.png"
+        }
+      ]
+    },
+    "managePlatform": {
+      "img": "https://storage.jd.com/jdlk-website/hardware/terminal-manage.png",
+      "title": "媒体管理平台",
+      "info":"自主研发的配套媒体管理平台，实现对每一个设备点位的实时监控及管理，包括设备运行状态、客户广告投放情况、在投计划管理、设备远程重启等。极大的降低了媒体资源的管理成本及难度。",
+      "cardInfoList": [
+        {
+          "title": "LBS",
+          "desc": "精确定位每一台设备坐标",
+          "icon": "https://storage.jd.com/jdlk-website/hardware/lbs-icon.png"
+        },
+        {
+          "title": "实时监测",
+          "desc": "设备运行状态实时监测",
+          "icon": "https://storage.jd.com/jdlk-website/hardware/check-icon.png"
+        },
+        {
+          "title": "即时监播",
+          "desc": "任意设备广告轮播情况",
+          "icon": "https://storage.jd.com/jdlk-website/hardware/chart-icon.png"
+        },
+        {
+          "title": "远程关闭/唤起",
+          "desc": "支持远程",
+          "icon": "https://storage.jd.com/jdlk-website/hardware/remote-icon.png"
+        }
+      ]
+    }
+  },
+  "terminal": {
+    "title": "广告终端",
+    "titleIcon": "https://storage.jd.com/jdlk-website/hardware/equipment.png",
+    "terminalDevice": {
+      "title": "终端设备",
+      "info":"轻松适应多种应用场景",
+      "terminalList": [
+        {
+          "name": "55寸",
+          "bg": "https://storage.jd.com/jdlk-website/hardware/terminal-item-bg.png",
+          "sceneInfo": "商场、写字楼等大型场所",
+          "sizeIcon": "https://storage.jd.com/jdlk-website/hardware/55size.png",
+          "sizeInfo": "寸立式大屏",
+          "desc": "55英寸样式",
+          "screenBg": "https://storage.jd.com/jdlk-website/hardware/screen-55.png"
+        },
+        {
+          "name": "32寸",
+          "bg": "https://storage.jd.com/jdlk-website/hardware/terminal-item-bg.png",
+          "sceneInfo": "社区、写字楼等电梯场景",
+          "sizeIcon": "https://storage.jd.com/jdlk-website/hardware/32size.png",
+          "sizeInfo": "寸立式大屏",
+          "desc": "32英寸样式",
+          "screenBg": "https://storage.jd.com/jdlk-website/hardware/screen-32.png"
+        },
+        {
+          "name": "27寸",
+          "bg": "https://storage.jd.com/jdlk-website/hardware/terminal-item-bg.png",
+          "sceneInfo": "社区、写字楼等电梯场景",
+          "sizeIcon": "https://storage.jd.com/jdlk-website/hardware/27size.png",
+          "sizeInfo": "寸立式大屏",
+          "desc": "27英寸样式",
+          "screenBg": "https://storage.jd.com/jdlk-website/hardware/screen-27.png"
+        },
+        {
+          "name": "投影",
+          "bg": "https://storage.jd.com/jdlk-website/hardware/terminal-item-bg.png",
+          "sceneInfo": "商场、写字楼等大型场所",
+          "sizeIcon": "https://storage.jd.com/jdlk-website/hardware/shadowsize.png",
+          "sizeInfo": "长焦/短焦",
+          "desc": "投影（长焦/短焦）",
+          "screenBg": "https://storage.jd.com/jdlk-website/hardware/screen-shadow.png"
+        }
+      ]
+    }
+  }
+}

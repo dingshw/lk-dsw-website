@@ -1,0 +1,47 @@
+
+.m-footer { 
+  width:375px;
+  height:169px;
+  background:rgba(21,20,21,1);
+  text-align: center;
+  overflow: hidden;
+  .footer-info {
+    margin: 27px auto 31px;
+    font-size:11px;
+    font-family:"PingFang SC","MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:12px;
+    opacity:0.8;
+  }
+  .footer-contact {
+    display: flex;
+    margin: 0 29px;
+    img {
+      width: 23px;
+      height: 23px;
+      margin-right: 7px;
+    }
+    .footer-tel {
+      margin-right: 29px;
+      color:rgba(255,255,255,1);
+    }
+    h3 {
+      font-size:18px;
+      font-family:"PingFang SC","MicrosoftYaHei";
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:22px;
+    }
+  }
+  .footer-copyright {
+    margin: 51px auto 15px;
+    font-size:10px;
+    font-family:"PingFang SC","MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(254,254,254,1);
+    line-height:12px;
+    opacity:0.3;
+  }
+}
+    

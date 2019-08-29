@@ -1,0 +1,241 @@
+@mixin littleSize($size: 10, $width: 0, $type: 'left') {
+  font-size: 12px;
+  transform-origin: center #{$type};
+  transform: scale($size / 12);
+
+  @if $width>0 {
+    width: #{$width * 12 / $size}px;
+  }
+}
+.wx-platform {
+}
+.wx-platform-info {
+  margin-top: 27px;
+  position: relative;
+  text-align: center;
+  h4 {
+    margin-bottom: 20px;
+    font-size:19px;
+    font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+    font-weight:bold;
+    color:rgba(5,11,35,1);
+  }
+  h5 {
+    font-size:12px;
+    font-family:"PingFang SC","MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(5,11,35,1);
+    opacity:0.6;
+    margin-bottom: 28px;
+  }
+  h6 {
+    text-align: left;
+    margin: 300px 25px 42px;
+    font-size:12px;
+    font-family:"PingFang SC","MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(5,11,35,1);
+    opacity:0.7;
+  }
+  .lkyl-bg-m {
+    position: absolute;
+    top: 79px;
+    left: 114px;
+    width: 173px;
+    height: 216px;
+  }
+  .lkyl-scan-m {
+    position: absolute;
+    top: 207px;
+    left: 60px;
+    width: 117px;
+    height: 117px;
+  }
+  .sale-platform-bg-m {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 100%;
+    height: 328px;
+    z-index: -1;
+  }
+}
+.wx-user-spread {
+  width: 100%;
+  height: 1192px;
+  overflow: hidden;
+  background-image: url('https://storage.jd.com/jdlk-website/wxmarketingm/user-spread-bg-m.png');
+  background-size:  100% 100%;
+  .title-text {
+    color:rgba(255,255,255,1);
+  }
+  .wx-user-lkyl {
+    width: 330px;
+    height: 169px;
+    margin: 44px auto 32px;
+    background-image: url('https://storage.jd.com/jdlk-website/wxmarketingm/lkyl-user-bg-m.png');
+    background-size: 100% 100%;
+    text-align: center;
+    overflow: hidden;
+    h4 {
+      margin-top: 114px;
+      font-size:10px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight:bold;
+      color:rgba(255,255,255,1);
+    }
+  }
+  .wx-user-data {
+    height: 84px;
+    background-image: url('https://storage.jd.com/jdlk-website/wxmarketingm/user-data-bg-m.png');
+    background-size: 100% 100%;
+    text-align: center;
+    margin: 0 25px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .wx-user-data-center {
+      margin: 0 auto;
+      flex: 1;
+    }
+    .wx-user-data-center-text {
+      font-size:20px;
+    }
+    .user-line {
+      width:0px;
+      height:41px;
+      border-left:0.5px solid rgba(255,255,255,0.1);
+    }
+    h3 {
+      font-size:11px;
+      font-family:"PingFang SC","MicrosoftYaHei";
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      span {
+        font-size:24px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+        margin-right: 4px;
+      }
+    }
+    h4 {
+      font-size:11px;
+      font-family:"PingFang SC","MicrosoftYaHei";
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      opacity:0.6;
+    }
+  }
+  .wx-spread-lkyl {
+    margin: 56px 25px 0;
+    text-align: center;
+    h3 {
+      margin: 0 0 30px 0;
+      font-size:16px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight:bold;
+      color:rgba(255,255,255,1);
+    }
+    .wx-spread-chart {
+      width: 326px;
+      height: 204px;
+      margin: 0 auto 20px;
+      background-image: url('https://storage.jd.com/jdlk-website/wxmarketingm/spread-bg-m.png');
+      background-size: 100% 100%;
+      position: relative;
+      overflow: hidden;
+      .spread-chart-item {
+        margin: 41px 8px 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .chart-title-1 {
+        position: absolute;
+        top: 19px;
+        left: 16px;
+        font-size:13px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+      }
+      .chart-title-2 {
+        position: absolute;
+        top: 19px;
+        left: 182px;
+        font-size:13px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+      }
+      .wx-spread-chart-line {
+        width:0px;
+        height:166px;
+        border-left:1px solid rgba(255,255,255,0.1);
+      }
+    }
+  }
+}
+.wx-service {
+  overflow: hidden;
+  width:100%;
+  background:rgba(244,246,250,1);
+  .wx-service-card-list {
+    margin: 37px 25px 30px;
+    .wx-service-card {
+      width: 325px;
+      height: 140px;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      margin-bottom: 16px;
+      .wx-service-card-bg {
+        display: block;
+        position: absolute;
+        width: 325px;
+        height: 140px;
+      }
+      h3 {
+        margin-top: 28px;
+        font-size:16px;
+        font-family:"PingFang SC", "Microsoft YaHei";
+        font-weight:bold;
+        opacity:0.9;
+        color:rgba(255,255,255,1);
+      }
+      h4 {
+        text-align: left;
+        margin-top: 14px;
+        @include littleSize(11, 0, 'center');
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        opacity:0.5;
+      }
+    }
+  }
+  .wx-service-showmore {
+    cursor: pointer;
+    margin: 5px auto 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    h6 {
+      text-align: center;
+      font-size:12px;
+      font-family:"PingFang SC","MicrosoftYaHei";
+      font-weight:400;
+      color:rgba(5,11,35,1);
+      line-height:16px;
+    }
+    img {
+      margin-left: 5px;
+      width: 9px;
+      height: 5px;
+    }
+  }
+}

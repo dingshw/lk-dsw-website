@@ -1,0 +1,209 @@
+.shuke-desc {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 78px;
+
+  overflow: hidden;
+  .title-bgtext {
+    width: 549px;
+    height: 74px;
+  }
+
+  .two {
+    display: flex;
+    margin-top: 36px;
+
+    .left {
+      flex: 1;
+      // background: palegoldenrod;
+      position: relative;
+
+      img {
+        width: 449px;
+        height: 447px;
+        position: absolute;
+        right: 147px;
+      }
+
+      .fu {
+        font-size: 24px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight: bold;
+        color: rgba(1, 97, 255, 1);
+        position: absolute;
+
+        &.fu1 {
+          top: 75px;
+          right: 438px;
+        }
+
+        &.fu2 {
+          top: 75px;
+          right: 263px;
+        }
+
+        &.fu3 {
+          top: 235px;
+          right: 484px;
+        }
+
+        &.fu4 {
+          top: 235px;
+          right: 210px;
+        }
+
+        &.fu5 {
+          top: 350px;
+          right: 346px;
+        }
+      }
+
+      .zhu {
+        font-size: 24px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 194px;
+        right: 320px;
+      }
+    }
+
+    .right {
+      flex: 1;
+
+      p {
+        font-size: 16px;
+        font-family:"PingFang SC", "Microsoft YaHei";
+        font-weight: 400;
+        color: rgba(5, 11, 35, 1);
+        line-height: 40px;
+        opacity: 0.9;
+
+        &.p2 {
+          margin-top: 50px;
+        }
+
+        &.p3 {
+          margin-top: 60px;
+        }
+      }
+
+      .douhao2 {
+        float: right;
+        width: 59px;
+        height: 57px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+.laike{
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: url('https://storage.jd.com/jdlk-website/aboutus/laikebg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .laike-desc {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 200px;
+    position: relative;
+  
+    .title-bgtext {
+      width: 426px;
+      height: 73px;
+    }
+  
+    .two {
+      display: flex;
+      margin-top: 36px;
+  
+      .left {
+        flex: 1;
+  
+        .douhao1 {
+          margin: 40px 0 0 0px;
+          width: 60px;
+          height: 58px;
+        }
+  
+        .p1 {
+          font-size: 16px;
+          font-family:"PingFang SC", "Microsoft YaHei";
+          font-weight: 400;
+          color: rgba(5, 11, 35, 1);
+          opacity: 0.9;
+        }
+  
+        h6 {
+          font-size: 28px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight: bold;
+          color: rgba(5, 11, 35, 1);
+          line-height: 1em;
+          margin: 54px 0 29px 0;
+        }
+  
+        p {
+          font-size: 14px;
+          font-family:"PingFang SC", "Microsoft YaHei";
+          font-weight: 400;
+          color: rgba(5, 11, 35, 1);
+          opacity: 0.6;
+          line-height: 1.5em;
+        }
+      }
+  
+      .right {
+        flex: 1;
+        position: relative;
+  
+        .bg {
+          width: 454px;
+          height: 456px;
+          position: absolute;
+          top: 89px;
+          left: 142px;
+        }
+  
+        .starName {
+          position: absolute;
+          width: 80px;
+          height: 37px;
+          font-size: 16px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight: bold;
+          color: rgba(255, 255, 255, 1);
+          line-height: 20px;
+          text-align: center;
+  
+          &.starName-1 {
+            top: 162px;
+            left: 330px;
+          }
+  
+          &.starName-2 {
+            top: 495px;
+            left: 168px;
+          }
+  
+          &.starName-3 {
+            width: 70px;
+            top: 495px;
+            left: 498px;
+          }
+        }
+      }
+    }
+    .bigbg{
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  }
+}

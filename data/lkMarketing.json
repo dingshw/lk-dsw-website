@@ -1,0 +1,50 @@
+{
+  "banner": {
+    "mimg": "https://storage.jd.com/jdlk-website/lkmarketing/lkmarketingbg-m.png",
+    "img": "https://storage.jd.com/jdlk-website/lkmarketing/lkmarketingbg.png",
+    "title": "来客营销平台",
+    "info":"大数据与AI驱动的,线上线下一体化广告营销平台"
+  },
+  "service": {
+    "title": "服务介绍",
+    "titleIconM": "https://storage.jd.com/jdlk-website/lkmarketing/service-m.png",
+    "titleIcon": "https://storage.jd.com/jdlk-website/lkmarketing/service.png",
+    "bg": "https://storage.jd.com/jdlk-website/lkmarketing/serviceBg.png",
+    "peopleName": "定向人群包",
+    "serviceList": [
+      {
+        "name": "分析&定向",
+        "numIconM": "https://storage.jd.com/jdlk-website/lkmarketing/lk-service-1-m.png",
+        "numIcon": "https://storage.jd.com/jdlk-website/lkmarketing/lk-service-1.png",
+        "icon": "https://storage.jd.com/jdlk-website/lkmarketing/analysIcon.png",
+        "icon0": "https://storage.jd.com/jdlk-website/lkmarketing/analysIcon0.png",
+        "desc": "基于京东多年电商、金融等业务的数据积累和挖掘，结合客户的投放需求及产品特性，多维度、有深度的精准定位目标用户人群。",
+        "categoryList": [
+          {"num": 3.1, "unit": "亿", "name": "活跃用户"},
+          {"num": 1, "unit": "万+", "name": "细分品类"},
+          {"num": 27.4, "unit": "万", "name": "入驻品牌"}
+        ],
+        "categoryAll": {"num": 10, "unit": "亿条","unitText":"消费数据", "name": "每日产生", "info": "用户日常衣、食、住、行等全方面的消费数据"},
+        "aiAnalys": ["投放需求", "产品特性"],
+        "aiName": "AI人群分析"
+      },
+      {
+        "name": "投放&触达",
+        "numIconM": "https://storage.jd.com/jdlk-website/lkmarketing/lk-service-2-m.png",
+        "numIcon": "https://storage.jd.com/jdlk-website/lkmarketing/lk-service-2.png",
+        "icon": "https://storage.jd.com/jdlk-website/lkmarketing/touchIcon.png",
+        "icon0": "https://storage.jd.com/jdlk-website/lkmarketing/touchIcon0.png",
+        "desc": "线上、线下广告一体化投放解决方案，拥有线上优质媒体资源，同时提供覆盖商场、写字楼、小区等多场景的线下媒体投放。"
+
+      },
+      {
+        "name": "复盘&沉淀",
+        "numIconM": "https://storage.jd.com/jdlk-website/lkmarketing/lk-service-3-m.png",
+        "numIcon": "https://storage.jd.com/jdlk-website/lkmarketing/lk-service-3.png",
+        "icon": "https://storage.jd.com/jdlk-website/lkmarketing/replayIcon.png",
+        "icon0": "https://storage.jd.com/jdlk-website/lkmarketing/replayIcon0.png",
+        "desc": "每轮投放结束后提供详尽的投放数据分析报告，同为每一位客户建立专属的数据仓库并针对客户的目标用户群体建立数据模型。随着每次投放数据的积累，不断完善模型，投放的越久越精准。"
+      }
+    ]
+  }
+}

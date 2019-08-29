@@ -1,0 +1,1119 @@
+@keyframes cicir1
+{
+  0%   {transform: scale(0)}
+  100% {transform: scale(1)}
+}
+@keyframes outerCicle{
+  0%{transform:rotate(0deg);}
+  25%{transform:rotate(90deg);}
+  50%{transform:rotate(180deg);}
+  75%{transform:rotate(270deg);}
+  100%{transform:rotate(360deg);}
+}
+@keyframes innerCicle{
+  0%{transform:rotate(0deg);}
+  25%{transform:rotate(-90deg);}
+  50%{transform:rotate(-180deg);}
+  75%{transform:rotate(-270deg);}
+  100%{transform:rotate(-360deg);}
+}
+@keyframes analyScan{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(70px);}
+  100%{transform:translateY(0px);}
+}
+@keyframes downArrow
+{
+  0%   {top: 53px;}
+  100% {top: 68px;}
+}
+@mixin littleSize($size: 10, $width: 0, $type: 'left') {
+  font-size: 12px;
+  transform-origin: center #{$type};
+  transform: scale($size / 12);
+
+  @if $width>0 {
+    width: #{$width * 12 / $size}px;
+  }
+}
+.menu-list-title {
+  margin: 26px 25px 34px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  .menu-list-item {
+    flex: 1;
+    h3 {
+      font-size:15px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight:bold;
+      color:rgba(5,11,35,1);
+      opacity:0.5;
+      padding: 0 21px;
+    }
+    .title-active {
+      opacity:1;
+    }
+  }
+  .title-line {
+    margin-top: 13px;
+    height: 2px;
+    background: rgba(164, 164, 164, 1);
+    opacity: 0.2;
+  }
+  .title-line-active {
+    opacity: 1;
+    height: 4px;
+    margin-top: 11px;
+    background: linear-gradient(
+      90deg,
+      rgba(50, 142, 255, 1) 0%,
+      rgba(1, 80, 255, 1) 100%
+    );
+  }
+}
+.device-info {
+  text-align: center;
+  .title {
+    margin: 0 auto;
+    font-size:19px;
+    font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+    font-weight:bold;
+    color:rgba(5,11,35,1);
+  }
+  .info {
+    text-align: left;
+    margin: 19px 25px 16px;
+    font-size:11px;
+    font-family:"PingFang SC","MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(5,11,35,1);
+    opacity:0.6;
+  }
+  .img-0 {
+    margin: 0 auto;
+    width: 277px;
+    img {
+      width: 100%;
+    }
+  }
+  .img-1 {
+    margin: 0 auto;
+    width: 277px;
+    img {
+      width: 100%;
+    }
+  }
+  .card-item-0 {
+    margin: 11px auto 0;
+  }
+  .card-item-1 {
+    margin: 46px auto 0;
+  }
+  .card-item {
+    margin: 0 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card-info {
+    width: 132px;
+    margin-bottom: 39px;
+    text-align: center;
+    img {
+      width: 44px;
+      height: 44px;
+    }
+    .card-title {
+      font-size:14px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight:bold;
+      color:rgba(5,11,35,1);
+      margin-top: 4px;
+    }
+    .card-message {
+      margin-top: 6px;
+      font-size:11px;
+      font-family:"PingFang SC","MicrosoftYaHei";
+      font-weight:400;
+      color:rgba(5,11,35,1);
+      opacity:0.6;
+    }
+  }
+}
+.markering-service {
+  background-image: url('http://storage.jd.com/jdlk-website/lkmarketingm/serviceBg-m.png');
+  width: 100%;
+  height: 903px;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: relative;
+  .arrow-left-m {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 488px;
+    width: 28px;
+    height: 55px;
+    z-index: 2;
+  }
+  .arrow-right-m {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 488px;
+    width: 28px;
+    height: 55px;
+    z-index: 2;
+  }
+  .title-bgtext-m {
+    .title-bgIcon-m {
+      width: 194px;
+      height: 37px;
+    }
+    h4 {
+      font-size:22px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight:bold;
+      color:rgba(255,255,255,1);
+    }
+  }
+  .service-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 25px;
+    position: relative;
+    .service-list-line {
+      position: absolute;
+      left: 0;
+      top: 34px;
+      width: 100%;
+      height:2px;
+      background:rgba(0,0,0,1);
+      opacity:0.2;
+    }
+    h5 {
+      font-size:15px;
+      font-family:"PingFang SC","MicrosoftYaHei";
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:16px;
+      opacity:0.5;
+    }
+    .active {
+      opacity:1;
+    }
+    .service-item-line {
+      margin-top: 16px;
+      height:4px;
+      background:linear-gradient(90deg,rgba(50,142,255,1) 0%,rgba(1,80,255,1) 100%);
+    }
+  }
+  .service-item-title {
+    text-align: center;
+    img {
+      height: 39px;
+    }
+    h5 {
+      margin-top: -23px;
+      font-size:19px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight:bold;
+      color:rgba(255,255,255,1);
+    }
+    h6 {
+      text-align: left;
+      margin: 19px 25px 29px;
+      font-size:12px;
+      font-family:"PingFang SC","MicrosoftYaHei";
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      opacity:0.6;
+    }
+  }
+  .service-item-body {
+    position: relative;
+    .category-list {
+      display: flex;
+      flex-direction: row;
+      margin: 0 25px;
+      justify-content: space-between;
+      .category-item {
+        text-align: center;
+        width: 105px;
+        height: 52px;
+        background-size: 100% 100%;
+        background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/category-list-bg-m.png');
+        h3 {
+          font-size:10px;
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          span {
+            font-size:24px;
+            font-family:"PingFang SC", "Microsoft YaHei";
+            font-weight:bold;
+            color:rgba(255,255,255,1);
+            margin-right: 5px;
+          }
+        }
+        h4 {
+          font-size:10px;
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          opacity:0.66;
+        }
+      }
+    }
+    .tree-line {
+      display: block;
+      margin: 0 auto;
+      width: 222px;
+      height: 36px;
+    }
+    .everyday-data {
+      width: 175px;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      background-size: 100% 100%;
+      background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/category-list-bg-m.png');
+      h4 {
+        font-size:9px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        opacity:0.6;
+        padding-top: 9px;
+        margin: 0;
+      }
+      h5 {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size:9px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        text-align: left;
+        span {
+          font-size:35px;
+          font-family:"PingFang SC", "Microsoft YaHei";
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+          margin-right: 5px;
+        }
+      }
+      .lightPointBox{
+        width:25px;
+        height:25px;
+        position: absolute;
+        left: 75px;
+        animation: cicir1 3s infinite linear;
+        &.top{
+          top: -13px;
+        } 
+        &.bottom{
+          bottom: -13px;
+          animation: cicir1 3s infinite 0.5s linear;
+        }    
+        .center{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }  
+        .point1{
+          width:4px;
+          height:4px;
+          border:2px solid rgba(255,255,255,1);
+          border-radius:50%;
+        }
+        .point2{
+          width:16px;
+          height:16px;
+          background:rgba(255,255,255,1);
+          opacity:0.2;
+          border-radius:50%;
+        }
+        .point3{
+          width:32px;
+          height:32px;
+          background:rgba(255,255,255,1);
+          opacity:0.1;
+          border-radius:50%;
+        }
+      }
+    }
+    .everyday-data-line {
+      width: 152px;
+      height: 79px;
+      display: block;
+      margin: 0 auto;
+    }
+    .feature-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: -55px 66px 0;
+      height: 23px;
+      text-align: center;
+      h4 {
+        width: 60px;
+        background-size: 100% 100%;
+        line-height: 23px;
+        background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/featureBg-m.png');
+        font-size:10px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(255,255,255,1);
+      }
+    }
+    .service-ai-cicle {
+      position: relative;
+      width: 201px;
+      height: 201px;
+      margin: 0 auto;
+      .service-ai-outer {
+        position: absolute;
+        width: 201px;
+        height: 201px;      
+        animation:outerCicle 6s linear infinite;    
+      }
+      .service-ai-inner {
+        position: absolute;
+        text-align: center;
+        width: 182px;
+        height: 164px;
+        left: 10px;
+        top: 19px;
+        background-size: 100% 100%;
+        background-image: url('https://storage.jd.com/jdlk-website/lkmarketingm/service-ai-inner-m.png');
+        .service-ai-inner-cicle {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 160px;
+          height: 160px;
+          overflow: hidden;
+          border-radius: 100%;
+          .service-ai-scan {
+            position: absolute;
+            left: -6px;
+            width: 172px;
+            height: 81px;
+            animation: analyScan 4s linear infinite;
+          }
+        }
+      }
+      h4 {
+        width:69px;
+        height:13px;
+        position: absolute;
+        top: 115px;
+        left: 56px;
+        margin: 0;
+        font-size:13px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+      }
+    }
+    .analy-people-line2 {
+      height: 43px;
+      margin: 0 auto;
+    }
+    .analy-people-line1 {
+      height: 51px;
+      margin: -23px auto 0;
+    }
+    .analy-people-line {
+      width: 1px;
+      position: relative;
+      background-size: 100% 100%;
+      background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/analy-people-line-m.png');
+      .lightPointBox{
+        width:25px;
+        height:25px;
+        position: absolute;
+        left: -12px;
+        animation: cicir1 3s infinite linear;
+        &.top{
+          top: -13px;
+        } 
+        &.bottom{
+          bottom: -12px;
+          animation: cicir1 3s infinite 0.5s linear;
+        }    
+        .center{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }  
+        .point1{
+          width:4px;
+          height:4px;
+          border:2px solid rgba(255,255,255,1);
+          border-radius:50%;
+        }
+        .point2{
+          width:16px;
+          height:16px;
+          background:rgba(255,255,255,1);
+          opacity:0.2;
+          border-radius:50%;
+        }
+        .point3{
+          width:32px;
+          height:32px;
+          background:rgba(255,255,255,1);
+          opacity:0.1;
+          border-radius:50%;
+        }
+      }
+    }
+    .analy-people {
+      width: 325px;
+      height: 90px;
+      margin: 0 auto;
+      background-size: 100% 100%;
+      text-align: center;
+      overflow: hidden;
+      background-image: url('http://storage.jd.com/jdlk-website/lkmarketingm/people-bg-m.png');
+      h4 {
+        margin-top: 11px;
+        font-size:13px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+      }
+    }
+    .service-touchuser {
+      position: relative;
+      width: 198px;
+      height: 198px;
+      margin: -15px auto 0;
+      .service-touchuser-outer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation:outerCicle 6s linear infinite;
+      }
+      .service-touchuser-inner {
+        position: absolute;
+        width: 169px;
+        height: 169px;
+        left: 15px;
+        top: 15px;
+        .service-touchuser-inner-bg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 169px;
+          height: 169px;
+          animation:innerCicle 6s linear infinite;
+        }
+        .service-touchuser-icon {
+          position: absolute;
+          top: 33px;
+          left: 45px;
+          width: 80px;
+          height: 69px;
+        }
+        h4 {
+          position: absolute;
+          top: 103px;
+          left: 54px;
+          margin: 0;
+          font-size:15px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+        }
+      }
+    }
+    .service-channel-line {
+      width: 173px;
+      height: 46px;
+      position: relative;
+      background-size: 100% 100%;
+      margin: -15px auto 0;
+      background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/channel-line-m.png');
+      .lightPointBox{
+        width:25px;
+        height:25px;
+        position: absolute;
+        left: 50%;
+        margin-left: -13px;
+        animation: cicir1 3s infinite linear;
+        &.top{
+          top: -13px;
+        } 
+        &.bottom1{
+          bottom: -13px;
+          left: 0px;
+          animation: cicir1 3s infinite 0.5s linear;
+        }
+        &.bottom2{
+          bottom: -13px;
+          left: 173px;
+          animation: cicir1 3s infinite 0.5s linear;
+        }    
+        .center{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }  
+        .point1{
+          width:4px;
+          height:4px;
+          border:2px solid rgba(255,255,255,1);
+          border-radius:50%;
+        }
+        .point2{
+          width:16px;
+          height:16px;
+          background:rgba(255,255,255,1);
+          opacity:0.2;
+          border-radius:50%;
+        }
+        .point3{
+          width:32px;
+          height:32px;
+          background:rgba(255,255,255,1);
+          opacity:0.1;
+          border-radius:50%;
+        }
+      }
+    }
+    .service-channel-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 25px;
+      .service-channel-item {
+        width: 153px;
+        background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/channel-bg-m.png');
+        background-size: 100% 100%;
+        text-align: center;
+        h4 {
+          margin: 16px 0 7px;
+          font-size:11px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+        }
+        h5 {
+          margin: 0 auto;
+          @include littleSize(9, 121, 'center');
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          opacity:0.5;
+        }
+        .online-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-top: 5px;
+          li {
+            display: block;
+            width: 50px;
+            img {
+              width: 29px;
+              height: 29px;
+            }
+            h5 {
+              width: auto;
+              margin-top: -4px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        .underline-item {
+          margin: 8px auto;
+          width: 146px;
+          height: 43px;
+          background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/channel-user-m.png');
+          background-size: 100% 100%;
+          .tag-title {
+            padding-top: 7px;
+            opacity: 0.8;
+          }
+          .underline-item-tag {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            h5 {
+              margin: 0;
+              display: inline-block;
+              @include littleSize(8, 50, 'center');
+              opacity: 0.8;
+            }
+            img {
+              width: 10px;
+              height: 8px;
+              margin-right: 2px;
+            }
+            .tag-line {
+              width: 0;
+              height:8px;
+              margin-top: -3px;
+              border-left: 1px solid rgba(255,255,255,1);
+              opacity:0.1;
+            }
+          }
+        }
+      }
+    }
+    .service-terminal {
+      width: 215px;
+      height: 235px;
+      background-image: url('http://storage.jd.com/jdlk-website/lkmarketingm/adterminalbg-m.png');
+      background-size: 100% 100%;
+      margin: 0 auto;
+      text-align: center;
+      h4 {
+        padding-top: 12px;
+        font-size:13px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+      }
+    }
+    .closeCase-data {
+      position: relative;
+      .lightPointBox{
+        width:25px;
+        height:25px;
+        position: absolute;
+        left: 50%;
+        margin-left: -13px;
+        animation: cicir1 3s infinite linear;
+        &.top{
+          top: -13px;
+        } 
+        &.bottom{
+          bottom: -13px;
+          animation: cicir1 3s infinite 0.5s linear;
+        }  
+        .center{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }  
+        .point1{
+          width:4px;
+          height:4px;
+          border:2px solid rgba(255,255,255,1);
+          border-radius:50%;
+        }
+        .point2{
+          width:16px;
+          height:16px;
+          background:rgba(255,255,255,1);
+          opacity:0.2;
+          border-radius:50%;
+        }
+        .point3{
+          width:32px;
+          height:32px;
+          background:rgba(255,255,255,1);
+          opacity:0.1;
+          border-radius:50%;
+        }
+      }
+      h4 {
+        text-align: center;
+        margin: 0 auto;
+        font-size:12px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        width: 80px;
+        height: 33px;
+        line-height: 33px;
+        background-size: 100% 100%;
+        background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/closeCase-bg-m.png')
+      }
+      .closeCase-line1 {
+        margin: 0 auto;
+        width: 1px;
+        height: 28px;
+        background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/closeCase-line-m.png')
+      }
+      .closeCase-line2{
+        margin: 0 auto;
+        width: 1px;
+        height: 26px;
+        background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/closeCase-line-m.png')
+      }
+    }
+    .service-strategy {
+      position: absolute;
+      left: 295px;
+      top: 109px;
+      .strategy-line1 {
+        width: 36px;
+        height: 34px;
+      }
+      .service-strategy-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 93px;
+        margin-left: 20px;
+        text-align: center;
+        background-size: 100% 100%;
+        background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/strategy-bg-m.png');
+        h4 {
+          @include littleSize(9, 10, 'center');
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(255,255,255,1);
+        }
+      }
+      .strategy-line2 {
+        width: 1px;
+        height: 80px;
+        margin-left: 35px;
+      }
+    }
+    .service-data-bank {
+      width: 325px;
+      height: 194px;
+      background-size: 100% 100%;
+      margin: 0 auto;
+      text-align: center;
+      overflow: hidden;
+      background-image: url('http://storage.jd.com/jdlk-website/lkmarketing/data-bank-bg-m.png');
+      h4 {
+        font-size:13px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+        margin: 13px auto 11px;
+      }
+      .data-bank {
+        display: flex;
+        flex-direction: row;
+        margin:  11px 29px 11px 8px;
+        align-items: center;
+        .data-store {
+          position: relative;
+          width: 147px;
+          height: 147px;
+          .data-store-outer {
+            left: 0;
+            top: 0;
+            position: absolute;
+            width: 147px;
+            height: 147px;
+            animation:outerCicle 6s linear infinite;
+          }
+          .data-store-inner {
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            left: 11px;
+            top: 11px;
+            background-size: 100% 100%;
+            background-image: url('https://storage.jd.com/jdlk-website/lkmarketing/data-store-inner.png');
+            h5 {
+              margin: 0;
+              font-size:9px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(255,255,255,1);
+            }
+            .data-store-text {
+              position: absolute;
+              top: 17px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            .data-store-icon {
+              width: 21px;
+              height: 19px;
+              position: absolute;
+              top: 34px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            .data-down-arrow {
+              position: absolute;
+              left: 60px;
+              animation: downArrow 2s infinite linear;
+            }
+            .data-cn-icon {
+              width: 24px;
+              height: 19px;
+              position: absolute;
+              top: 74px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            .data-cn-text {
+              position: absolute;
+              top: 100px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+        .data-bank-line {
+          display: block;
+          width: 46px;
+          height: 1px;
+        }
+        .data-model {
+          width: 105px;
+          height: 130px;
+          text-align: center;
+          position: relative;
+          background-size: 100% 100%;
+          background-image: url('https://storage.jd.com/jdlk-website/lkmarketing/data-model-bg-m.png');
+          h5 {
+            margin-top: 15px;
+            font-size:12px;
+            font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+            font-weight:bold;
+            color:rgba(255,255,255,1);
+          }
+          .data-model-cube {
+            margin-top: 17px;
+            width: 63px;
+            height: 67px;
+          }
+        }
+      }
+    }
+  }
+}
+.markering-channel {
+  width: 100%;
+  background:rgba(244,246,250,1);
+  overflow: hidden;
+  
+  .markering-channel-body {
+    margin: 40px 25px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(217,223,237,1);
+    box-shadow:0px 0px 15px 0px rgba(5,11,35,0.05);
+    border-radius:2px;
+    .channel-card-head2 {
+      background-image: url('http://storage.jd.com/jdlk-website/lkmarketingm/channel-undeline-bg-m.png');
+    }
+    .channel-card-head1 {
+      background-image: url('http://storage.jd.com/jdlk-website/lkmarketingm/channel-online-bg-m.png');
+    }
+    .channel-card-head {
+      width: 100%;
+      height: 113px;
+      background-size: 100% 100%;
+      h3 {
+        padding: 19px 0 15px 17px;
+        font-size:18px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+      }
+      h4 {
+        padding-left: 17px;
+        margin: 0;
+        @include littleSize(10, 281, 'left');
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        line-height:16px;
+        opacity:0.6;
+      }
+    }
+    .channel-card-body {
+      margin: 22px 16px 0;
+      height: 423px;
+      .channel-card-item {
+        height: 50%;
+        position: relative;
+        z-index: 1;
+        h5 {
+          font-size:14px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          color:rgba(5,11,35,1);
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0;
+          margin: 20px 0;
+          li {
+            margin-top: 10px;
+            display: inline-block;
+            width:141px;
+            height:40px;
+            background:rgba(255,255,255,1);
+            img {
+              width:141px;
+              height:40px;
+            }
+          }
+        }
+        .citymap {
+          position: absolute;
+          top: 7px;
+          left: 47px;
+          width: 226px;
+          height: 187px;
+        }
+        h6 {
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+        }
+        .city1 {
+          position: absolute;
+          top: 38px;
+          left: 6px;
+          width: 165px;
+          height: 34px;
+          line-height: 34px;
+          text-align: center;
+          background-image: url('https://storage.jd.com/jdlk-website/lkmarketingm/city1bg-m.png');
+          background-size: 100% 100%;
+        }
+        .city1-text {
+          @include littleSize(11, 163, 'center');
+          margin-top: -2px;
+          margin-left: -7px;
+        }
+        .city2 {
+          position: absolute;
+          top: 77px;
+          left: 6px;
+          width: 133px;
+          height: 34px;
+          text-align: center;
+          background-image: url('https://storage.jd.com/jdlk-website/lkmarketingm/city2bg-m.png');
+          background-size: 100% 100%;
+        }
+        .city2-text {
+          @include littleSize(11, 133, 'center');
+          margin-top: 5px;
+          margin-left: -7px;
+        }
+        .city3 {
+          position: absolute;
+          top: 116px;
+          left: 6px;
+          width: 66px;
+          height: 34px;
+          text-align: center;
+          background-image: url('https://storage.jd.com/jdlk-website/lkmarketingm/city3bg-m.png');
+          background-size: 100% 100%;
+        }
+        .city3-text {
+          @include littleSize(11, 66, 'center');
+          margin-top: 5px;
+          margin-left: -4px;
+        }
+        .channel-life-bg {
+          position: absolute;
+          top: 13px;
+          left: -9px;
+          z-index: -1;
+          width: 307px;
+          height: 174px;
+        }
+        .channel-office-bg {
+          margin: 20px auto 0;
+          z-index: -1;
+          width: 73px;
+          height: 73px;
+          text-align: center;
+          background-image: url('https://storage.jd.com/jdlk-website/lkmarketing/officebg.png');
+          background-size: 100% 100%;
+        }
+        .channel-item-officeicon {
+          width: 20px;
+          height: 21px;
+          margin-top: 15px;
+        }
+        .channel-item-houseicon {
+          width: 22px;
+          height: 19px;
+          margin-top: 15px;
+        }
+        .channel-item-markeyicon {
+          width: 20px;
+          height: 21px;
+          margin-top: 15px;
+        }
+        .channel-item-text {
+          @include littleSize(10, 60, 'center');
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+        }
+        .channel-house-market {
+          display: flex;
+          flex-direction: row;
+          margin: 0 22px;
+          justify-content: space-between;
+        }
+        .channel-house-bg {
+          width: 73px;
+          height: 73px;
+          text-align: center;
+          background-image: url('https://storage.jd.com/jdlk-website/lkmarketing/housebg.png');
+          background-size: 100% 100%;
+        }
+        .channel-house-icon {
+          position: absolute;
+          top: 247px;
+          left: 105px;
+          z-index: -1;
+        }
+        .channel-house-text {
+          position: absolute;
+          top: 286px;
+          left: 105px;
+        }
+        .channel-market-bg {
+          width: 73px;
+          height: 73px;
+          text-align: center;
+          background-image: url('https://storage.jd.com/jdlk-website/lkmarketing/marketbg.png');
+          background-size: 100% 100%;
+        }
+        .channel-market-icon {
+          position: absolute;
+          top: 249px;
+          left: 297px;
+          z-index: -1;
+        }
+        .channel-market-text {
+          position: absolute;
+          top: 286px;
+          left: 297px;
+        }
+      }
+    }
+  }
+}

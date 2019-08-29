@@ -1,0 +1,775 @@
+.citymap-workcoop {
+  width: 100%;
+  height: 1073px;
+  overflow: hidden;
+  background-size: 100% 100%;
+  z-index: -1;
+  margin-top: -5px;
+  background-image: url('https://storage.jd.com/jdlk-website/business/citymap-workcoop-bg.png');
+  .title-text {
+    font-size:36px;
+    font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+  }
+  h5 {
+    margin: 32px auto 59px;
+    width:620px;
+    font-size:14px;
+    font-family:"PingFang SC","MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:24px;
+    opacity:0.5;
+  }
+  .citymap-china {
+    position: relative;
+    width: 1170px;
+    height: 744px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-image: url('https://storage.jd.com/jdlk-website/business/map.png');
+    .citymap-num {
+      position: absolute;
+      top: 151px;
+      left: 144px;
+      width: 326px;
+      height: 210px;
+      background-size: 100% 100%;
+      background-image: url('https://storage.jd.com/jdlk-website/business/mapnum-bg.png');
+      .num-title {
+        margin: 37px auto 45px;
+        font-size:24px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+        opacity:1;
+        text-align: center;
+      }
+      .num-list {
+        display: flex;
+        flex-direction: row;
+        width: 225px;
+        height: 50px;
+        margin: 0 auto;
+        justify-content: space-between;
+        font-size:16px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        span {
+          opacity: 0.7;
+        }
+        .num-strong {
+          font-size:38px;
+          font-family:"PingFang SC", "Microsoft YaHei";
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+          opacity:1;
+        }
+        .num-line {
+          width:1px;
+          height:60px;
+          background:rgba(255,255,255,1);
+          opacity:0.1;
+        }
+      }
+    }
+    .bjlocation {
+      position: absolute;
+      left: 760px;
+      top: 122px;
+      height: 35px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size:20px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight:bold;
+      color:rgba(255,35,96,1);
+      line-height:20px;
+      .lightPointBox{
+        width:88px;
+        height:40px;
+        position: absolute;
+        top: 26px;
+        left: 7px;
+        animation: cicir1 3s infinite linear;   
+        .center{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }  
+        .point1{
+          width:16px;
+          height:8px;
+          background:rgba(255,19,58,1);
+          border-radius:50%;
+        }
+        .point2{
+          width:42px;
+          height:19px;
+          background:rgba(255,19,58,1);
+          opacity:0.2;
+          border-radius:50%;
+        }
+        .point3{
+          width:88px;
+          height:40px;
+          background:rgba(255,19,58,1);
+          opacity:0.1;
+          border-radius:50%;
+        }
+      }
+      h6 {
+        margin-right: 10px;
+      }
+    }
+    .citymap-location {
+      height: 35px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size:14px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight:bold;
+      color:rgba(255,255,255,1);
+      line-height:16px;
+    }
+    .bj-xian {
+      position: absolute;
+      left: 690px;
+      top: 152px;
+    }
+    .xianlocation {
+      position: absolute;
+      left: 649px;
+      top: 230px;
+    }
+    .bj-gz {
+      position: absolute;
+      left: 809px;
+      top: 163px;
+    }
+    .gzlocation {
+      position: absolute;
+      left: 826px;
+      top: 487px;
+    }
+    .bj-jn {
+      position: absolute;
+      left: 810px;
+      top: 163px;
+    }
+    .jnlocation {
+      position: absolute;
+      left: 810px;
+      top: 196px;
+    }
+    .bj-qd {
+      position: absolute;
+      left: 810px;
+      top: 163px;
+    }
+    .qdlocation {
+      position: absolute;
+      left: 863px;
+      top: 200px;
+    }
+    .bj-sh {
+      position: absolute;
+      left: 809px;
+      top: 140px;
+    }
+    .shlocation {
+      position: absolute;
+      left: 953px;
+      top: 280px;
+    }
+    .bj-hz {
+      position: absolute;
+      left: 809px;
+      top: 151px;
+    }
+    .hzlocation {
+      position: absolute;
+      left: 924px;
+      top: 308px;
+    }
+  }
+}
+
+
+.support{
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  .line {
+    position: absolute;
+    top: 252px;
+    left: 0;
+    width: 100vw;
+    height:1px;
+    background:rgba(0,0,0,1);
+    opacity:0.05;
+  }
+  // height: 640px;
+  .supportContent{
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+    // margin-bottom: 800px;
+    .menu{
+      position: relative;
+      height: 60px;
+      display: flex;
+      text-align: center;
+      margin: 30px auto 0 auto;
+      .item{
+        flex: 1;
+        font-size:20px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(0,0,0,1);
+        cursor: pointer;
+        .title{
+          border-bottom: 4px solid transparent;
+          padding-bottom: 15px;
+          &.active{
+            border-bottom-color: #0150FF;
+          }
+        }
+      }
+    }
+
+    .contentBox{
+      height: 670px;
+      position: relative;
+      .content{
+        display: flex;
+        position: relative;
+        .left1{
+          flex: 1;
+          padding: 32px;
+          .num{
+            float: left;
+          }
+          .title{
+            margin-top: 33px;
+            font-size:36px;
+            font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+            font-weight:bold;
+            color:rgba(5,11,35,1);
+            position: relative;
+            left: -20px;
+          }
+          .desc{
+            // width:449px;
+            height:39px;
+            padding-left: 23px;
+            margin-top: 13px;
+            font-size:14px;
+            font-family:"PingFang SC","MicrosoftYaHei";
+            font-weight:400;
+            color:rgba(5,11,35,1);
+            opacity:0.6;
+          }
+          .iconBox{
+            width: 550px;
+            height: 320px;
+            margin-top: 80px;
+            transform: translateX(-40px);
+            // background-color: blue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .item{
+              text-align: center;
+              width: 160px;
+              .name{
+                font-size:14px;
+                font-family:"PingFang SC","MicrosoftYaHei";
+                font-weight:400;
+                color:rgba(5,11,35,1);
+              }
+            }
+          }
+        }
+        .right1{
+          flex: 1;
+          position: relative;
+          margin-top: -13px;
+          .bg{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+          }
+          .point{
+            position: absolute;
+            top: 87px;
+            right: 86px;
+            z-index: 2;
+          }
+          .main{
+            position: absolute;
+            top: 160px;
+            right: 110px;
+            z-index: 3;
+          }
+        }
+        .iconBox2{
+          margin-top: 50px;
+          width: 600px;
+          height: 30px;
+          // background: darkorange;
+          
+          display: flex;
+          flex-direction: column;
+          .item{
+            flex: 1;
+            line-height: 130px;
+            // display: flex;
+            // flex-direction: row;
+            .left{
+              float: left;
+            }
+            .right{
+              margin-left: 94px;
+              line-height: 1.3em;
+              .title2{
+                margin-top: 22px;
+                font-size: 22px;
+                font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+                font-weight: bold;
+                color: #050B23;
+              }
+              .desc2{
+                margin-top: 20px;
+                font-size:14px;
+                font-family:"PingFang SC","MicrosoftYaHei";
+                font-weight:400;
+                color: #050B23;
+                opacity:0.6;
+              }
+            }
+          }
+        }
+      }
+      .huan{
+        position: absolute;
+        width: 990px;
+        height: 631px;
+        // top: 49px;
+        left: 50%;
+        transform: translateX(-50%);
+        .bg{
+          position: relative;
+          top: 30px;
+        }
+        .bluebox{
+          width: 200px;
+          height: 400px;
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          .item{
+            position: absolute;
+            width: 78px;
+            height: 78px;
+            background-image: url('https://storage.jd.com/jdlk-website/business/bluebg.png');
+            text-align: center;
+            .icon{
+              margin-top: 12px;
+            }
+            .name{
+              margin: 3px auto 0 auto;
+              width:48px;
+              height:13px;
+              font-size:12px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(255,255,255,1);
+              &.name1{
+                margin-top: 0px;
+                line-height: 1.1em;
+              }
+            }
+            &.item1{
+              top: 180px;
+              left: -30px;  
+            }
+            &.item2{
+              top: 280px;
+              left: -60px;
+            }
+            &.item3{
+              top: 390px;
+              left: -60px;        
+            }
+            &.item4{
+              top: 500px;
+              left: -30px;
+            }
+          }
+          .txtBox{
+            position: absolute;
+            top: 350px;
+            left: 30px;
+            width: 180px;
+            height: 100px;
+            text-align: center;
+            .title{
+              height:23px;
+              font-size:22px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(1,80,255,1);
+              line-height:28px;
+            }
+            .subtitle{
+              margin-top: 8px;
+              height:12px;
+              font-size:12px;
+              font-family:"PingFang SC","MicrosoftYaHei";
+              font-weight:400;
+              color:rgba(1,80,255,1);
+              opacity:0.8;
+            }
+          }
+        }
+        .redbox{
+          width: 200px;
+          height: 400px;
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          .item{
+            position: absolute;
+            width: 78px;
+            height: 78px;
+            background-image: url('https://storage.jd.com/jdlk-website/business/redbg.png');
+            text-align: center;
+            .icon{
+              margin-top: 12px;
+            }
+            .name{
+              margin: 3px auto 0 auto;
+              width:48px;
+              height:13px;
+              font-size:12px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(255,255,255,1);
+              &.name1{
+                margin-top: 0px;
+                line-height: 1.1em;
+              }
+            }
+            &.item1{
+              top: 180px;
+              right: -30px;  
+            }
+            &.item2{
+              top: 280px;
+              right: -60px;
+            }
+            &.item3{
+              top: 390px;
+              right: -60px;        
+            }
+            &.item4{
+              top: 500px;
+              right: -30px;
+            }
+          }
+          .txtBox{
+            position: absolute;
+            top: 350px;
+            right: 30px;
+            width: 180px;
+            height: 100px;
+            text-align: center;
+            .title{
+              height:23px;
+              font-size:22px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(255,30,0,1);
+              line-height:28px;
+            }
+            .subtitle{
+              margin-top: 8px;
+              height:12px;
+              font-size:12px;
+              font-family:"PingFang SC","MicrosoftYaHei";
+              font-weight:400;
+              color:rgba(255,30,0,1);
+              opacity:0.8;
+            }
+          }
+        }
+        .middlebox{
+          width: 352px;
+          height: 352px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -80px;
+          text-align: center;
+          transform: translateX(-50%);
+          background-image: url('https://storage.jd.com/jdlk-website/business/zhongxinyuan.png');
+          .jdicon{
+            margin-top: 77px;
+          }
+          .title{
+            margin-top: 21px;
+            height:26px;
+            font-size:26px;
+            font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+            font-weight:bold;
+            color:rgba(255,255,255,1);
+          }
+          .desc{
+            margin: 21px auto;
+            width:145px;
+            height:28px;
+            font-size:12px;
+            font-family:"PingFang SC","MicrosoftYaHei";
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height:16px;
+            opacity:0.8;
+          }
+        }
+      }
+      .tongcheng{
+        width: 1200px;
+        height: 360px;
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url('https://storage.jd.com/jdlk-website/business/tongchengbg.png');
+        .phoneBox{
+          margin-top: -10px;
+          width: 260px;
+          text-align: center;
+          position: absolute;
+          &.phone-left{
+            left: 50px;
+          }
+          &.phone-right{
+            right: 50px;
+          }
+          .name{
+            height:16px;
+            font-size:16px;
+            font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+            font-weight:bold;
+            color:rgba(5,11,35,1);
+            margin-bottom: 10px;
+            &.name1{
+              transform: translateX(20px);
+            }
+            &.name2{
+              transform: translateX(-20px);
+            }
+          }
+        }
+        .middleBox{
+          position: absolute;
+          width: 481px;
+          height: 189px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 100px;
+          .bg{
+            position: absolute;
+            top: 66px;
+            left: 0;
+          }
+          .bigBox{
+            position: absolute;
+            width: 204px;
+            height: 215px;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url('https://storage.jd.com/jdlk-website/business/didianbg.png');
+            text-align: center;
+            padding-top: 20px;
+            .txt{
+              margin-top: 6px;
+              font-size:16px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(255,255,255,1);
+              line-height:20px;
+            }
+          }
+          .smallBox{
+            width: 100px;
+            text-align: center;
+            position: absolute;
+            .txt{
+              font-size:12px;
+              font-family:"PingFang SC","MicrosoftYaHei";
+              font-weight:400;
+              color:rgba(1,80,255,1);
+            }
+            &.smallBox1{
+              top: 172px;
+              left: -35px;
+            }
+            &.smallBox2{
+              top: 110px;
+              left: 50%;
+              transform: translateX(-50%);
+              .txt{
+                font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+                font-weight:bold;
+              }
+            }
+            &.smallBox3{
+              top: 172px;
+              right: -35px;
+            }
+            &.smallBox4{
+              top: 214px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+      .change-item-line {
+        position: absolute;
+        top: 595px;
+        left: 32px;
+        margin: 0 auto;
+        width: 1200px;
+        height: 13px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .change-list-line {
+          position: relative;
+          width:120px;
+          height:3px;
+          background:rgba(5,11,35,0.1);
+          .change-list-line-active {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width:30px;
+            height:3px;
+            background:rgba(5,11,35,1);
+            opacity:1;
+          }
+        }
+        .change-list-text {
+          height:13px;
+          font-size:14px;
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(5,11,35,1);
+          opacity:0.6;
+        }
+      }
+    }
+  }
+}
+
+.comeon{
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: url('https://storage.jd.com/jdlk-website/business/hehuorenbg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .comeonContent{
+    max-width: 1280px;
+    height: 607px;
+    padding: 10px 32px;
+    margin: auto;
+    position: relative;
+    overflow-x: hidden;
+
+    .bg{
+      position: absolute;
+      width: 100vw;
+      height: 607px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    .box{
+      .bigTxt{
+        margin-top: 60px;
+        width:144px;
+        height:36px;
+        font-size:36px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(5,11,35,1);
+      }
+      .detail{
+        margin-top: 24px;
+        font-size:16px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(5,11,35,1);
+        line-height:24px;
+        opacity:0.5;
+      }
+      .kuangBox{
+        margin-top: 44px;
+        .kuang{
+          width:540px;
+          height:85px;
+          border:1px solid rgba(5,11,35,0.2);
+          float: left;
+          position: relative;
+          &.right{
+            float: right;
+          }
+          .middle{
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            &.b{
+              height: 24px;
+              line-height: 24px;
+            }
+            .icon{
+              float: left;
+            }
+            .txt{
+              margin-left: 41px;
+              font-size:24px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(5,11,35,1);
+              &.b{
+                margin-left: 51px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes cicir1
+{
+  0%   {transform: scale(0)}
+  100% {transform: scale(1)}
+}

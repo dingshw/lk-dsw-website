@@ -1,0 +1,45 @@
+{
+  "navName": [
+    {
+      "name": "营销服务",
+      "link": "/marketService/lkMarketing",
+      "mlink": "/m/marketService/lkMarketing",
+      "showMenu": false,
+      "downBox": [
+        {
+          "name": "来客营销平台",
+          "link": "/marketService/lkMarketing",
+          "mlink": "/m/marketService/lkMarketing"
+        },
+        {
+          "name": "微信营销平台",
+          "mlink": "/m/marketService/wxMarketing",
+          "link": "/marketService/wxMarketing"
+        },
+        {
+          "name": "同城推广",
+          "mlink": "/m/marketService/city",
+          "link": "/marketService/city"
+        }
+      ]
+    },
+    {
+      "name": "智能硬件",
+      "mlink": "/m/hardware",
+      "link": "/hardware",
+      "downBox": null
+    },
+    {
+      "name": "业务合作",
+      "mlink": "/m/business",
+      "link": "/business",
+      "downBox": null
+    },
+    {
+      "name": "关于我们",
+      "mlink": "/m/aboutus",
+      "link": "/aboutus",
+      "downBox": null
+    }
+  ]
+}

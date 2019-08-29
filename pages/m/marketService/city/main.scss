@@ -1,0 +1,542 @@
+
+.white {
+  color: #ffffff;
+}
+
+@mixin littleSize($size: 10, $width: 0, $type: 'left') {
+  font-size: 3.2vw;
+  transform-origin: top #{$type};
+  transform: scale($size / 12);
+
+  @if $width>0 {
+    width: #{$width * 12 / $size / 3.75}vw;
+  }
+}
+
+.service {
+  width: 100vw;
+  overflow: hidden;
+  height: 878px;
+  background-color: #1f2431;
+  background-image: url('https://storage.jd.com/jdlk-website/citymarketing/m2/servicebg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+
+  .menu{
+    overflow-x: auto;
+    margin: 28px 25px 30px;
+    position: relative;
+    .itemBox{
+      display: flex;
+      width: 99vw;
+      justify-content: space-between;
+      .item{
+        text-align: center;
+        flex: 1;
+        font-size:15px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,0.5);
+        border-bottom: 4px solid transparent;
+        &.active{
+          color:rgba(255,255,255,1);
+          padding-bottom: 16px;
+          border-bottom: 4px solid #0150FF;
+        }
+        // color: red;
+        // line-height:16px;
+      }
+    }
+    .line {
+      top: 40px;
+      position: absolute;
+      width: 99vw;
+      height:2px;
+      background:rgba(0,0,0,1);
+      opacity:0.2;
+    }
+  }
+
+  .content {
+    // height: 733px;
+    // background-color: aqua;
+    .title {
+      text-align: center;
+      height: 19px;
+      margin-top: 19px;
+      font-size: 19px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight: bold;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .desc {
+      text-align: left;
+      margin: 19px 25px 0;
+      height: 54px;
+      font-size: 12px;
+      font-family:"PingFang SC", "Microsoft YaHei";
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      opacity: 0.6;
+    }
+
+    .miles {
+      width: 100vw;
+      height: 368px;
+      position: relative;
+      top: -60px;
+    }
+
+    .iconBox {
+      margin-top: -70px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .item {
+        width: 187.5px;
+        text-align: center;
+        margin-top: 30px;
+
+        img {
+          width: 44px;
+          height: 44px;
+        }
+
+        .name {
+          margin: 6px auto 0;
+          width: 117px;
+          height: 29px;
+          font-size: 12px;
+          font-family:"PingFang SC", "Microsoft YaHei";
+          font-weight: 400;
+          color: rgba(255, 255, 255, 1);
+        }
+
+        .subtitle{
+          width:130px;
+          margin: 0 auto;
+          height:45px;
+          font-size:12px;
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          opacity:0.4;
+        }
+      }
+    }
+
+    .o2o{
+      margin-top: 22px;
+      .xianxia{
+        margin: 0 auto;
+        width: 325px;
+        height: 220px;
+        background-image: url('https://storage.jd.com/jdlk-website/citymarketing/m2/xianxiabg.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .top{
+          padding: 26px;
+          img{
+            width: 50px;
+            height: 56px;
+            float: left;
+          }
+          .right{
+            margin-left: 68px;
+            .title2{
+              height:14px;
+              font-size:14px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(255,255,255,1);
+            }
+            .desc2{
+              margin-top: 10px;
+              // width:252px;
+              height:28px;
+              // font-size:12px;
+              // transform-origin: top left;
+              // transform: scale(0.8333333);
+              @include littleSize(10, 210);
+              font-family:"PingFang SC","MicrosoftYaHei";
+              font-weight:400;
+              color:rgba(255,255,255,1);
+              opacity:0.4;
+            }
+          }
+        }
+        .bottom{
+          display: flex;
+          justify-content: space-around;
+          padding: 10px;
+          .item{
+            text-align: center;
+            width: 81px;
+            height: 81px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            img{
+              height: 21px;
+              margin-top: 20px;
+            }
+            .name2{
+              margin-top: 1px;
+              // font-size:10px;
+              @include littleSize(10, 0, 'center');
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(255,255,255,1);
+            }
+            &.item1{
+              background-image: url('https://storage.jd.com/jdlk-website/citymarketing/m2/zhuzhaibg.png');
+            }
+            &.item2{
+              background-image: url('https://storage.jd.com/jdlk-website/citymarketing/m2/xieziloubg.png');
+            }
+            &.item3{
+              background-image: url('https://storage.jd.com/jdlk-website/citymarketing/m2/shangchangbg.png');
+            }
+          }
+        }
+      }
+      .move{
+        width: 40vw;
+        height: 77px;
+        // background: antiquewhite;
+        position: relative;
+        left: 50%;
+        border-left: 1px dashed #515662;
+        .txt{
+          width:161px;
+          height:44px;
+          font-size:16px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+          margin: 0 auto;
+          text-align: center;
+          line-height: 1.6em;
+        }
+        .sanjiao{
+          transform: rotate(90deg);
+          position: absolute;
+          // top: -5px;
+          // top: 66px;
+          left: -4px;
+          animation: todown 2s infinite linear;
+          z-index: 21;
+        }
+        @keyframes todown
+        {
+          0%   {top: -5px;}
+          100% {top: 66px;}
+        }
+        .lightPointBox{
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          left: -12.5px;
+          animation: cicir1 1.5s infinite linear;
+          z-index: 22;
+          &.left{
+            top: -14px;
+          } 
+          &.right{
+            bottom: -14px;
+            animation: cicir1 1.5s infinite 0.5s linear;
+          }      
+          .point1{
+            width:3px;
+            height:3px;
+            border:2px solid rgba(255,255,255,1);
+            border-radius:50%;
+          }
+          .point2{
+            width:13px;
+            height:13px;
+            background:rgba(255,255,255,1);
+            opacity:0.2;
+            border-radius:50%;
+          }
+          .point3{
+            width: 25px;
+            height: 25px;
+            background:rgba(255,255,255,1);
+            opacity:0.1;
+            border-radius:50%;
+          }
+        }
+      }
+      .xianshang{
+        margin: 0 auto;
+        width: 325px;
+        height: 220px;
+        background-image: url('https://storage.jd.com/jdlk-website/citymarketing/m2/xianshangbg.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .top{
+          padding: 26px 26px 10px 26px;
+          img{
+            width: 50px;
+            height: 56px;
+            float: left;
+          }
+          .right{
+            margin-left: 68px;
+            .title2{
+              height:14px;
+              font-size:14px;
+              font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+              font-weight:bold;
+              color:rgba(255,255,255,1);
+            }
+            .desc2{
+              margin-top: 10px;
+              width:210px;
+              height:28px;
+              @include littleSize(10, 210);
+              // font-size:12px;
+              // transform-origin: top left;
+              // transform: scale(0.8333333);
+              font-family:"PingFang SC","MicrosoftYaHei";
+              font-weight:400;
+              color:rgba(255,255,255,1);
+              opacity:0.4;
+            }
+          }
+        }
+        .bottom2{
+          // margin-top: 10px;
+          padding: 0 35px 0 5px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .item{
+            text-align: center;
+            width: 40px;
+            margin-left: 15px;
+            margin-top: 6px;
+            img{
+              width: 35px;
+              height: 35px;
+            }
+            .name2{
+              // width: 50px;
+              margin-top: 0px;
+              // font-size:12px;
+              font-family:"PingFang SC","MicrosoftYaHei";
+              font-weight:400;
+              color:rgba(255,255,255,1);
+              opacity:0.6;
+              @include littleSize(10, 40);
+              // transform: scale(0.666666);
+              // transform-origin: top left;
+            }
+          }
+        }
+      }
+    }
+
+    .bihuan{
+      .item{
+        padding: 0px 27px 0 35px;
+        display: flex;
+        .left{
+          width: 160px;
+          margin-top: 20px;
+          .num{
+            height: 35px;
+          }
+          .name{
+            font-size:14px;
+            font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+            font-weight:bold;
+            color:rgba(255,255,255,1);
+            position: relative;
+            top: -15px;
+          }
+          .desc3{
+            // width:192px;
+            width: 160px;
+            height:46px;
+            // font-size:12px;
+            // transform-origin: top left;
+            // transform: scale(0.8333333);
+            @include littleSize(10, 160);
+            font-family:"PingFang SC","MicrosoftYaHei";
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height:18px;
+            opacity:0.4;
+          }
+        }
+        .right{
+          width: 138px;
+          height: 193px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.array{
+  position: absolute;
+  top: 50%;
+  margin-top: -28px;
+  width:28px;
+  height:55px;
+  z-index: 999;
+  img{
+    position: absolute;
+    width: 28px;
+    height: 55px;
+  }
+  &.leftArray{
+    left: 0;
+  }
+  &.rightArray{
+    right: 0;
+  }
+}
+
+.product {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+
+  .menu{
+    position: relative;
+    overflow: hidden;
+    overflow-x: auto;
+    margin: 28px 25px 30px;
+    .itemBox{
+      display: flex;
+      justify-content: space-between;
+      .item{
+        flex: 1;
+        font-size:15px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(5,11,35,0.5);
+        border-bottom: 4px solid transparent;
+        text-align: center;
+        p{
+          margin: 0 auto;
+        }
+        &.active{
+          color:rgba(5,11,35,1);
+          padding-bottom: 11px;
+          border-bottom: 4px solid #0150FF;
+        }
+        // color: red;
+        // line-height:16px;
+      }
+    }
+    .line {
+      top: 25px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height:2px;
+      background:rgba(164,164,164,1);
+      opacity:0.2;
+    }
+  }
+
+  .content {
+    height: 705px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 19px;
+    font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+    font-weight: bold;
+    color: rgba(5, 11, 35, 1);
+  }
+
+  .desc {
+    text-align: left;
+    word-break:break-all;
+    margin: 19px 25px 0;
+    font-size: 12px;
+    font-family:"PingFang SC", "Microsoft YaHei";
+    font-weight: 400;
+    color: rgba(5, 11, 35, 1);
+    opacity: 0.6;
+  }
+  .imgBox{
+    height: 216px;
+    position: relative;
+    margin-top: 15px;
+    .main{
+      height: 216px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .qr{
+      width: 117px;
+      height: 117px;
+      position: absolute;
+      top: 100px;
+      left: 56px;
+    }
+  }
+  .iconBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-bottom: 48px;
+    .item {
+      width: 187.5px;
+      text-align: center;
+      margin-top: 40px;
+
+      img {
+        width: 44px;
+        height: 44px;
+      }
+
+      .name {
+        height:14px;
+        font-size:14px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(5,11,35,1);
+      }
+
+      .subtitle{
+        margin: 11px auto;
+        width:121px;
+        height:31px;
+        font-size:12px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(5,11,35,1);
+        opacity:0.6;
+        &.wide{
+          width:130px;
+        }
+      }
+    }
+  }
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes cicir1
+{
+0%   {transform: scale(0)}
+100% {transform: scale(1)}
+}

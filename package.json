@@ -1,0 +1,13 @@
+{
+  "name": "jdlk",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate"
+  },
+  "dependencies": {
+    "echarts": "^4.2.1",
+    "node-sass": "^4.5.0",
+    "nuxt": "^2.8.1",
+    "sass-loader": "^6.0.1"
+  }
+}

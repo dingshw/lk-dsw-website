@@ -1,0 +1,634 @@
+.white {
+  color: #ffffff;
+}
+
+@mixin littleSize($size: 10, $width: 0, $type: 'left') {
+  font-size: 3.2vw;
+  transform-origin: top #{$type};
+  transform: scale($size / 12);
+
+  @if $width>0 {
+    width: #{$width * 12 / $size / 3.75}vw;
+  }
+}
+
+.froms{
+  width: 100vw;
+  height: 537px;
+  margin-top: -5px;
+  padding-top: 5px;
+  background-color: #1d2027;
+  background-image: url('https://storage.jd.com/jdlk-website/businessm2/fromsbg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  .descMain{
+    margin: 31px 25px 0;
+    width:319px;
+    height:51px;
+    font-size:12px;
+    font-family:"PingFang SC","MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:20px;
+    opacity:0.4;
+  }
+
+  .map{
+    width: 100vw;
+    height: 403px;
+    background-image: url('https://storage.jd.com/jdlk-website/businessm2/map1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    .txtBox{
+      position: absolute;
+      top: 130px;
+      left: 37px;
+      .top{
+        font-size:9px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        @include littleSize(9, 120);
+        color:rgba(255,255,255,1);
+        line-height:1.5em;
+        opacity:0.5;
+      }
+      .num{
+        height: 40px;
+        margin-top: 10px;
+        font-size:28px;
+        font-family:"PingFang SC", "Microsoft YaHei";
+        font-weight:bold;
+        color:rgba(25,204,255,1);
+        .big{
+          float: left;
+        }
+        .small{
+          font-size:11px;
+          margin-left: 60px;
+          @include littleSize(11);
+          position: relative;
+          top: 15px;
+        }
+      }
+    }
+    .beijing{
+      position: absolute;
+      top: 120px;
+      right: 93px;  
+      width: 60px;
+      height: 60px;
+      // background-color: rgba(255,35,96,0.4);;
+      img{
+        position: absolute;
+        top: 25px;
+        left: 28px;
+        width: 17px;
+        height: 22px;
+      }
+      .txt{
+        position: absolute;
+        top: 27px;
+        width:24px;
+        height:12px;
+        font-size:12px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,35,96,1);
+        line-height:16px;
+      }
+      .lightPointBox{
+        position: absolute;
+        top: 41px;
+        right: -2px;    
+        width: 48px;
+        height: 24px;
+        background:rgba(255,19,58,0.2);
+        border-radius:50%;
+        animation: cicir1 1.5s infinite linear;
+        .point1{
+          width:14px;
+          height:7px;
+          background:rgba(255,19,58,1);
+          border-radius:50%;
+        }
+      }
+      @keyframes cicir1
+      {
+        0%   {transform: scale(0)}
+        100% {transform: scale(1)}
+      }
+    }
+  }
+
+}
+
+.support{
+  width: 100vw;
+  height: 993px;
+  overflow: hidden;
+  position: relative;
+
+  .menu{
+    position: relative;
+    overflow-x: auto;
+    margin: 28px 25px 30px;
+    .itemBox{
+      display: flex;
+      justify-content: space-between;
+      width: 115vw;
+      .item{
+        font-size:15px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(5,11,35,0.5);
+        border-bottom: 4px solid transparent;
+        &.active{
+          color:rgba(5,11,35,1);
+          padding-bottom: 11px;
+          border-bottom: 4px solid #0150FF;
+        }
+        // color: red;
+        // line-height:16px;
+      }
+    }
+    .line {
+      top: 35px;
+      position: absolute;
+      width: 115vw;
+      height:2px;
+      background:rgba(0,0,0,1);
+      opacity:0.2;
+    }
+  }
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+  .content {
+    height: 733px;
+    position: relative;
+    // background-color: aqua;
+    .title {
+      text-align: center;
+      height: 19px;
+      margin-top: 19px;
+      font-size: 19px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight: bold;
+      color:rgba(5,11,35,1);
+    }
+
+    .desc {
+      text-align: left;
+      margin: 19px 25px 0;
+      height: 54px;
+      font-size: 12px;
+      font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+      font-weight: 400;
+      color:rgba(5,11,35,1);
+      opacity: 0.6;
+    }
+
+    .imgBox{
+      width: 297px;
+      height: 248px;
+      margin-top: 65px;
+      margin-left: 44px;
+      position: relative;
+      .mainImg{
+        width: 100%;
+        height: 100%;
+      }
+      .tag{
+        width: 110px;
+        height: 55px;
+        line-height: 41px;
+        background-image: url('https://storage.jd.com/jdlk-website/businessm2/pop.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        text-align: center;
+        font-size:14px;
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        position: absolute;
+        &.tag1{
+          top: -40px;
+          left: 105px;
+        }
+        &.tag2{
+          top: 65px;
+          left: -20px;
+        }
+      }
+    }
+
+    .iconBox {
+      // margin-top: -50px;
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-around;
+
+      .item {
+        width: 117px;
+        text-align: center;
+        margin-top: 50px;
+
+        &.wide{
+          width: 187.5px;
+          margin-top: 23px;
+        }
+
+        img {
+          width: 44px;
+          height: 44px;
+        }
+
+        .name {
+          margin: 11px auto 0 auto;
+          width: 117px;
+          height: 29px;
+          font-size: 14px;
+          font-family:"PingFang SC", "Microsoft YaHei";
+          font-weight: 400;
+          color:rgba(5,11,35,1);
+          line-height: 16px;
+        }
+
+        .subtitle{
+          width:130px;
+          margin: 0px auto 0 auto;
+          height:45px;
+          font-size:12px;
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(5,11,35,1);
+          opacity:0.4;
+        }
+      }
+    }
+
+    .miles{
+      width: 100vw;
+      height: 312px;
+      margin-top: -20px;
+      margin-bottom: -20px;
+    }
+
+    .huan{
+      width: 100vw;
+      height: 444px;
+      margin-top: 74px;
+      background-image: url('https://storage.jd.com/jdlk-website/businessm2/guangaozhongxinbg.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      .box{
+        width: 100vw;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        .item{
+          width: 55px;
+          height: 55px;
+          text-align: center;
+          background-image: url('https://storage.jd.com/jdlk-website/businessm2/bluebg.png');
+          background-repeat: no-repeat;
+          background-size: 100%;
+          padding-top: 8px;
+          &.item1, &.item4, &.item6, &.item7{
+            transform: translateY(15px);
+          }
+          &.item2, &.item3, &.item5, &.item8{
+            transform: translateY(-15px);
+          }
+          img{
+            height: 18px;
+          }
+          .name{
+            // width:36px;
+            // font-size:9px;
+            margin: 0px auto 0 auto;
+            @include littleSize(9, 36, 'center');
+            font-family:"PingFang SC","MicrosoftYaHei";
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            &.wide{
+              line-height: 1em;
+            }
+            &.wide2{
+              margin: -2px auto 0 auto;
+            }
+          }
+        }
+
+        &.down{
+          bottom: 0;
+          .item{
+            background-image: url('https://storage.jd.com/jdlk-website/businessm2/redbg.png');
+          }
+        }
+
+        
+      }
+      .title3{
+        position: absolute;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+
+        width:78px;
+        height:13px;
+        font-size:13px;
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        line-height:14px;
+        &.top{
+          top: 60px;
+          color:rgba(1,80,255,1);
+        }
+        &.down{
+          bottom: 80px;
+          color:rgba(255,30,0,1);
+        }
+      }
+      .subtitle3{
+        position: absolute;
+        left: 50%;
+        text-align: center;
+
+        width:160px;
+        margin-left: -80px;
+        // height:10px;
+        // font-size:10px;
+        @include littleSize(10, 0, 'center');
+        font-family:"PingFang SC","MicrosoftYaHei";
+        font-weight:400;
+        opacity:0.8;
+        &.top{
+          top: 80px;
+          color:rgba(1,80,255,1);
+        }
+        &.down{
+          bottom: 60px;
+          color:rgba(255,30,0,1);
+        }
+      }
+
+      .middle{
+        width: 176px;
+        height: 176px;
+        background-image: url('https://storage.jd.com/jdlk-website/businessm2/guanggaoshengtaizhongxin.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 15px;
+        margin-left: -1px;
+        padding-top: 34px;
+        text-align: center;
+        img{
+          width: 32px;
+          height: 21px;
+        }
+        .title4{
+          margin: 10px auto 0 auto;
+          width:90px;
+          height:16px;
+          font-size:15px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+        }
+        .subtitle4{
+          margin: 8px auto 0 auto;
+          // width:90px;
+          height:21px;
+          // font-size:9px;
+          @include littleSize(9, 90, 'center');
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          opacity:0.8;
+        }
+      }
+    }
+
+    .di{
+      width: 125px;
+      height: 143px;
+      background-image: url('https://storage.jd.com/jdlk-website/businessm2/didian.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin: 38px auto -40px auto;
+      text-align: center;
+      padding-top: 53px;
+      p{
+        margin: 0 auto;
+        // width:66px;
+        // font-size:11px;
+        @include littleSize(11, 66, 'center');
+        font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+      }
+    }
+
+    .phone{
+      display: flex;
+      justify-content: space-around;
+      .phoneItem{
+        text-align: center;
+        .name{
+          font-size:11px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          color:rgba(5,11,35,1);
+          &.name1{
+            transform: translateX(8px);
+          }
+          &.name2{
+            transform: translateX(-8px);
+          }
+        }
+        img{
+          margin-top: 2px;
+          width: 157px;
+          height: 285px;
+        }
+      }
+    }
+
+    .dipan{
+      width: 325px;
+      height: 468px;
+      position: absolute;
+      left: 50%;
+      bottom: 50px;
+      transform: translateX(-50%);
+      z-index: -1;
+
+      background-image: url('https://storage.jd.com/jdlk-website/businessm2/shengtaiquan.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      .item{
+        width: 80px;
+        text-align: center;
+        position: absolute;
+        img{
+          margin: 0 auto;
+          height: 21px;
+        }
+        .name{
+          width: 100%;
+          margin: 0 auto;
+          // width: 60px;
+          font-size:9px;
+          @include littleSize(9, 0, 'center');
+          font-family:"PingFang SC","MicrosoftYaHei";
+          font-weight:400;
+          color:rgba(1,80,255,1);
+          word-break: keep-all;
+        }
+        &.item1{
+          bottom: 10px;
+          left: -25px;
+        }
+        &.item2{
+          bottom: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &.item3{
+          bottom: 10px;
+          right: -25px;
+        }
+        &.item4{
+          bottom: 70px;
+          left: 50%;
+          transform: translateX(-50%);
+          img{
+            height: 34px;
+          }
+          .name{
+            font-size:10px;
+            @include littleSize(10, 0, 'center');
+            font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+            font-weight:bold;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+.comeon{
+  width: 100vw;
+  height: 379px;
+  overflow: hidden;
+  margin-top: -66px;
+  padding-top: 5px;
+  background-image: url('https://storage.jd.com/jdlk-website/businessm2/comeonbg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  .kuangBox{
+    margin-top: 44px;
+    .kuang{
+      width:280px;
+      height:43px;
+      margin: 20px auto 0 auto;
+      border:1px solid rgba(5,11,35,0.2);
+      position: relative;
+
+      .middle{
+        width: 190px;
+        height: 30px;
+        line-height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &.b{
+          height: 24px;
+          line-height: 24px;
+        }
+        .icon{
+          float: left;
+          position: relative;
+          top: 3px;
+          &.icona{
+            width: 17px;
+            height: 24px;
+          }
+          &.iconb{
+            width: 23px;
+            height: 17px;
+          }
+        }
+        .txt{
+          display: block;
+          text-decoration: none;
+          word-break: keep-all;
+          margin-left: 29px;
+          font-size:14px;
+          font-family:"PingFang-Bold", "MicrosoftYaHei-Bold";
+          font-weight:bold;
+          word-break: keep-all;
+          word-wrap: none;
+          color:rgba(5,11,35,1);
+          &.b{
+            margin-left: 33px;
+          }
+        }
+      }
+    }
+  }
+  .addr{
+    width: 277px;
+    margin: 25px auto;
+    font-size:11px;
+    @include littleSize(11, 277, 'center');
+    font-family:"PingFang SC","MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(5,11,35,1);
+    line-height:16px;
+    opacity:0.5;
+    text-align: center;
+    p{
+      margin-top: 12px;
+    }
+  }
+}
+
+.array{
+  position: absolute;
+  top: 50%;
+  margin-top: -28px;
+  width:28px;
+  height:55px;
+  img{
+    position: absolute;
+    width: 28px;
+    height: 55px;
+  }
+  &.leftArray{
+    left: 0;
+  }
+  &.rightArray{
+    right: 0;
+  }
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
